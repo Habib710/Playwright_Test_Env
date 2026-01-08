@@ -1,23 +1,23 @@
-import test from "@playwright/test";
-import { Registation } from "../pageObjects/Registration/regAction";
+import { test } from "@playwright/test";
+import { Registration } from "../pageObjects/Registration/regAction";
+
+
 
 test.describe("Demo test registation Feature ",()=>{
 
-    test("Successful Sign Up with Valid credidantal user",async ({page})=>{
-   const registation = new Registation(page);
+    test("Successful Sign Up with Valid credidantal user", async ({ page }) => {
+
+    const registration = new Registration(page);
+
    await page.goto("https://demo.evershop.io/");
-   await registation.clickOnAccountIcon();
-   await registation.clickOnAccountLink();
-   await registation.enterfullName("Habib");
-   await registation.enterEmail("mahabib@gmail.com");
-   await registation.enterPassword("pass12345");
-   await registation.ClickOnSingupButton();
+   await registration.clickOnAccountIcon();
+   await registration.clickOnAccountLink();
+   await registration.enterfullName("Habib");
+   await registration.enterEmail("mahabib@gmail.com");
+   await registration.enterPassword("pass12345");
+   await registration.ClickOnSingupButton();
 
 
     })
-    test("UnSuccessful Sign Up with InValid credidantal user",async ()=>{
-
-
-
-    })
+    
 })
