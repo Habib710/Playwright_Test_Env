@@ -1,4 +1,4 @@
-import { RegistrationObjects } from "./regObject";
+import { RegistrationObjects ,LogInObject} from "./regObject";
 
 export class Registration {
   constructor(page) {
@@ -18,7 +18,7 @@ async enterfullName(fullName){
     await this.locator.fullname.fill(fullName);
 }
 async enterEmail(email){
-  await this.locator.email.waitFor({ state: 'visible' });
+
 await this.locator.email.fill(email);
 
 }
@@ -28,5 +28,26 @@ async enterPassword(password){
 async ClickOnSingupButton(){
     await this.locator.submit.click();
 }
+
+}
+export class LogInInFormation {
+
+ constructor(page) {
+    this.page = page;
+    this.locator = new LogInObject(page);
+  }
+
+async enter_Email(email){
+
+await this.locator.email.fill(email);
+
+}
+async enter_Password(password){
+    await this.locator.password.fill(password);
+}
+async ClickOnSingIn_Button(){
+    await this.locator.submit.click();
+}
+
 
 }
