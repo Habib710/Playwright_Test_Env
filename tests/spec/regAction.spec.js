@@ -1,6 +1,5 @@
 import { test } from "@playwright/test";
-import { Registration } from "../pageObjects/Registration/regAction"
-;
+import { Registration } from "../pageObjects/Registration/regAction";
 
 
 
@@ -14,7 +13,7 @@ test.describe("Demo test registation Feature ",()=>{
    await registration.clickOnAccountIcon();
    await registration.clickOnAccountLink();
    await registration.enterfullName("Habib");
-   await registration.enterEmail("mahabib@gmail.com");
+   await registration.enterEmail("mahabib11@gmail.com");
    await registration.enterPassword("pass12345");
    await registration.ClickOnSingupButton();
 
