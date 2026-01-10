@@ -1,5 +1,6 @@
 import { test } from "@playwright/test";
-import { Registration } from "../pageObjects/Registration/regAction";
+import { Registration } from "../pageObjects/Registration/regAction"
+;
 
 
 
