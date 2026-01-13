@@ -1,5 +1,5 @@
 import { test } from "@playwright/test";
-import { LogInInFormation } from "../pageObjects/Registration/regAction";
+import { LogInInFormation } from "../pageObjects/Registration/LogInAction";
 
 
 test.describe("-----Login Test----- ",()=>{
