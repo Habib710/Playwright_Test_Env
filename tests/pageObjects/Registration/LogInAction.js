@@ -15,7 +15,7 @@ export class LogInInFormation {
     async enter_Email(email) {
 
         await this.locator.logInEmail.fill(email);
-        await this.locator.logInEmail.fill(email);
+
 
     }
     async enter_Password(password) {
