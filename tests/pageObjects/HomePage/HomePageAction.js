@@ -15,6 +15,12 @@ export class AddtoCardObject {
     async clickItem() {
         await this.locator.shopNow.click();
     }
+    async ColorSelect() {
+        await this.locator.ColorSelectBlack.click();
+    }
+    async addCart() {
+        await this.locator.addToCart.click();
+    }
 
 
 }
