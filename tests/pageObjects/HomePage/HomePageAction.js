@@ -9,9 +9,9 @@ export class AddtoCardObject {
     }
 
 
-    async clickHome() {
-        await this.locator.Home.click();
-    }
+    // async clickHome() {
+    //     await this.locator.Home.click();
+    // }
     async clickItem() {
         await this.locator.shopNow.click();
     }
